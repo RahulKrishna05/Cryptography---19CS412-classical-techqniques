@@ -317,7 +317,8 @@ int main() {
 ```
 ## OUTPUT:
 
-<img width="320" alt="image" src="https://github.com/user-attachments/assets/d06cbbe6-678a-48d0-9630-85d0d330ed2c">
+![image](https://github.com/user-attachments/assets/dc8caceb-6802-418a-bc88-fc9d8f1d5750)
+
 
 
 ## RESULT:
@@ -451,7 +452,9 @@ int main() {
 ```
 
 ## OUTPUT:
-<img width="374" alt="image" src="https://github.com/user-attachments/assets/723ca2a1-1078-4a59-a780-3d55896dd42a">
+
+![image](https://github.com/user-attachments/assets/71ab65eb-a07a-4cb1-abbc-3db92eb45896)
+
 
 
 ## RESULT:
@@ -564,7 +567,8 @@ void decipher() {
 
 ```
 ## OUTPUT:
-<img width="389" alt="image" src="https://github.com/user-attachments/assets/65a20ff7-cafc-44af-a309-bfc0933fdadf">
+![image](https://github.com/user-attachments/assets/b7ca1959-5e89-4940-ae58-060dd5fabc02)
+
 
 
 ## RESULT:
@@ -655,7 +659,8 @@ int main() {
 
 ```
 ## OUTPUT:
-<img width="406" alt="image" src="https://github.com/user-attachments/assets/194bb9f5-6d62-4999-af66-cc91cfc82cce">
+![image](https://github.com/user-attachments/assets/7826cc84-b34f-4ce8-a393-3fb07d8b433e)
+
 
 
 ## RESULT:
