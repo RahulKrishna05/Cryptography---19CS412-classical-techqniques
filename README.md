@@ -605,19 +605,39 @@ In the rail fence cipher, the plaintext is written downwards and diagonally on s
 #include <string.h>
 #include <stdlib.h>
 
+void encrypt(char str[], int rails);
+void decrypt(char str[], int rails);
+
 int main() {
-    int i, j, len, rails, count;
+    int choice, rails;
     char str[1000];
-    int code[100][1000]; 
 
     printf("Enter a Secret Message: ");
     fgets(str, sizeof(str), stdin);  
     str[strcspn(str, "\n")] = '\0'; 
 
-    len = strlen(str);
-
     printf("Enter number of rails: ");
     scanf("%d", &rails);
+
+    printf("Choose an option:\n1. Encrypt\n2. Decrypt\n");
+    scanf("%d", &choice);
+
+    if (choice == 1) {
+        encrypt(str, rails);
+    } else if (choice == 2) {
+        decrypt(str, rails);
+    } else {
+        printf("Invalid choice.\n");
+    }
+
+    return 0;
+}
+
+void encrypt(char str[], int rails) {
+    int i, j, len, count;
+    int code[100][1000]; 
+
+    len = strlen(str);
 
     for (i = 0; i < rails; i++) {
         for (j = 0; j < len; j++) {
@@ -643,7 +663,6 @@ int main() {
         count++;
     }
 
- 
     printf("\nEncrypted Message: ");
     for (i = 0; i < rails; i++) {
         for (j = 0; j < len; j++) {
@@ -653,8 +672,68 @@ int main() {
         }
     }
     printf("\n");
+}
 
-    return 0;
+void decrypt(char str[], int rails) {
+    int i, j, len, count;
+    int code[100][1000];
+    char decrypted[1000];
+
+    len = strlen(str);
+
+    for (i = 0; i < rails; i++) {
+        for (j = 0; j < len; j++) {
+            code[i][j] = 0;
+        }
+    }
+
+    count = 0;
+    j = 0;
+    int index = 0;
+
+    while (j < len) {
+        if (count % 2 == 0) {
+            for (i = 0; i < rails && j < len; i++) {
+                code[i][j] = 1; 
+                j++;
+            }
+        } else {
+            for (i = rails - 2; i > 0 && j < len; i--) {
+                code[i][j] = 1; 
+                j++;
+            }
+        }
+        count++;
+    }
+
+    for (i = 0; i < rails; i++) {
+        for (j = 0; j < len; j++) {
+            if (code[i][j] == 1) {
+                code[i][j] = (int)str[index++];
+            }
+        }
+    }
+
+    index = 0;
+    j = 0;
+
+    while (j < len) {
+        if (count % 2 == 0) {
+            for (i = 0; i < rails && j < len; i++) {
+                decrypted[j] = (char)code[i][j];
+                j++;
+            }
+        } else {
+            for (i = rails - 2; i > 0 && j < len; i--) {
+                decrypted[j] = (char)code[i][j];
+                j++;
+            }
+        }
+        count++;
+    }
+    decrypted[j] = '\0';
+
+    printf("\nDecrypted Message: %s\n", decrypted);
 }
 
 ```
