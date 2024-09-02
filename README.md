@@ -69,12 +69,9 @@ caesarDecrypt(message, key); printf("Decrypted Message: %s", message); return 0;
 
 
 ## OUTPUT:
-OUTPUT:
-Simulating Caesar Cipher
 
+![Screenshot 2024-09-02 100450](https://github.com/user-attachments/assets/7d8caa95-8643-4d50-ad87-40149f2a4dfa)
 
-Input : Anna University
-Encrypted Message : Dqqd Xqlyhuvlwb Decrypted Message : Anna University
 
 ## RESULT:
 The program is executed successfully
@@ -276,8 +273,7 @@ return 0;
 }
 
 ## OUTPUT:
-Output:
-Key text: Monarchy Plain text: instruments Cipher text: gatlmzclrqtx
+![Screenshot 2024-09-02 101252](https://github.com/user-attachments/assets/529a2487-9e15-49a7-b58e-de98ca07387f)
 
 ## RESULT:
 The program is executed successfully
@@ -360,12 +356,8 @@ printf("Decoded message : %s\n", dec); return 0;
 
 
 ## OUTPUT:
-OUTPUT:
-Simulating Hill Cipher
+![Screenshot 2024-09-02 101438](https://github.com/user-attachments/assets/e30ca619-a8a7-4379-b0fa-6189d9dca9a3)
 
-
-Input Message : SecurityLaboratory
-Padded Message : SECURITYLABORATORY Encrypted Message : EACSDKLCAEFQDUKSXU Decrypted Message : SECURITYLABORATORY
 ## RESULT:
 The program is executed successfully
 
@@ -429,13 +421,9 @@ char message[]= "Thisisasecretmessage.";//Replace withyourmessage
 //Decrypt themessage backtotheoriginal vigenereDecrypt(message,key); printf("DecryptedMessage:%s\n",message); Return 0;
 
 ## OUTPUT:
-OUTPUT :
 
-Simulating Vigenere Cipher
+![Screenshot 2024-09-02 101617](https://github.com/user-attachments/assets/501d5227-4cf2-42c5-a942-367bcf25e4d1)
 
-
-Input Message : SecurityLaboratory
-Encrypted Message : NMIYEMKCNIQVVROWXC Decrypted Message : SECURITYLABORATORY
 ## RESULT:
 The program is executed successfully
 
@@ -513,9 +501,8 @@ if(code[i][j]!=0) printf("%c",code[i][j]);
 printf("\n");
 }
 ## OUTPUT:
-OUTPUT:
-Enter a Secret Message wearediscovered
-Enter number of rails 2
-waeicvrderdsoee
+
+![Screenshot 2024-09-02 101832](https://github.com/user-attachments/assets/2fe31fb9-f4c9-4093-8f6e-6e4704bcec08)
+
 ## RESULT:
 The program is executed successfully
