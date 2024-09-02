@@ -659,7 +659,9 @@ int main() {
 
 ```
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/7826cc84-b34f-4ce8-a393-3fb07d8b433e)
+![image](https://github.com/user-attachments/assets/899e06c8-1ef9-4a1c-90c2-53b49fae3b4d)
+
+![image](https://github.com/user-attachments/assets/07b8b558-60ea-4148-91a1-d4b5f255bcc7)
 
 
 
